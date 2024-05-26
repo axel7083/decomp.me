@@ -46,6 +46,7 @@
         "react-contenteditable": "^3.3.7",
         "react-dom": "^18.2.0",
         "react-laag": "^2.0.5",
+        "react-select": "^5.8.0",
         "react-timeago": "^7.2.0",
         "react-virtualized-auto-sizer": "^1.0.24",
         "react-window": "^1.8.10",
@@ -82,13 +83,16 @@
         "postcss-scss": "^4.0.9",
         "sass-loader": "^14.1.1",
         "style-loader": "^3.3.4",
-        "stylelint": "^16.2.1",
+        "stylelint": "^16.6.0",
         "stylelint-config-css-modules": "^4.4.0",
-        "stylelint-config-standard-scss": "^13.0.0",
+        "stylelint-config-standard-scss": "^13.1.0",
         "tailwindcss": "^3.4.1",
         "typescript": "^5.4.3",
         "umd-compat-loader": "^2.1.2",
         "webpack": "^5.91.0"
+    },
+    "resolutions": {
+        "cosmiconfig": "9.0.0"
     },
     "browserslist": [
         "last 2 versions and not dead and >= 1% and supports async-functions"

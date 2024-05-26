@@ -84,3 +84,29 @@ body.no-scroll {
         height: 100svh;
     }
 }
+
+@layer components {
+    .react-select-container .react-select__control
+    {
+        @apply bg-[var(--g200)] border-2 border-[var(--g400)] hover:border-[var(--g400)];
+    }
+    
+    .react-select-container .react-select__option
+    {
+        @apply bg-[var(--g200)] hover:hover:bg-gray-3 hover:border-[var(--g400)] active:bg-[var(--g200)]
+    }
+    
+    .react-select-container .react-select__menu {
+        @apply bg-[var(--g200)] border-2 border-[var(--g400)];
+    }
+    
+    .react-select-container .react-select__indicator {
+        @apply text-[var(--g1600)] hover:text-[var(--g1600)];
+    }
+    
+    .react-select-container .react-select__input-container,
+    .react-select-container .react-select__placeholder,
+    .react-select-container .react-select__single-value {
+        @apply text-[var(--g1600)];
+    }
+}

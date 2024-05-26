@@ -1,4 +1,4 @@
-import Select from "@/components/Select2"
+import SelectWrapper from "@/components/SelectWrapper"
 import { TerseScratch } from "@/lib/api"
 
 export enum SortMode {
@@ -48,7 +48,7 @@ export default function SortBy({ sortMode, setSortMode }: Props) {
             <span className="mr-2 text-xs text-gray-11">
                 Sort by
             </span>
-            <Select
+            <SelectWrapper
                 value={sortMode}
                 onChange={m => {
                     setSortMode(m as SortMode)

@@ -4,7 +4,7 @@ import { TrashIcon } from "@primer/octicons-react"
 
 import Checkbox from "@/app/(navfooter)/settings/Checkbox"
 import Button from "@/components/Button"
-import Select2 from "@/components/Select2"
+import Select2 from "@/components/SelectWrapper"
 import * as api from "@/lib/api"
 import { Library } from "@/lib/api/types"
 import useTranslation from "@/lib/i18n/translate"

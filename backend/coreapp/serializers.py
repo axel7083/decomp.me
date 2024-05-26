@@ -55,6 +55,8 @@ else:
 
 class ProfileField(ProfileFieldBaseClass):
     def to_representation(self, profile: Profile) -> Dict[str, Any]:
+        if "context" not in self.context:
+            return {}
         return serialize_profile(self.context["request"], profile)
 
 

@@ -10,7 +10,7 @@ import { useCompilersForPlatform } from "@/components/compiler/compilers"
 import PresetSelect from "@/components/compiler/PresetSelect"
 import CodeMirror from "@/components/Editor/CodeMirror"
 import PlatformSelect from "@/components/PlatformSelect"
-import Select from "@/components/Select2"
+import SelectWrapper from "@/components/SelectWrapper"
 import * as api from "@/lib/api"
 import { Library } from "@/lib/api/types"
 import { scratchUrl } from "@/lib/api/urls"
@@ -247,7 +247,7 @@ export default function NewScratchForm({ serverCompilers }: {
             <div className={styles.compilerContainer}>
                 <div>
                     <span className={styles.compilerChoiceHeading}>Select a compiler</span>
-                    <Select
+                    <SelectWrapper
                         className={styles.compilerChoiceSelect}
                         options={compilerChoiceOptions}
                         value={compilerId}
